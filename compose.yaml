@@ -1,1 +1,9 @@
-services: {}
+services:
+  postgres:
+    image: 'postgis/postgis:latest'
+    environment:
+      - 'POSTGRES_DB=learn'
+      - 'POSTGRES_PASSWORD=oyerol'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5432:5432'
